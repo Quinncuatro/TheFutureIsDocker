@@ -1,0 +1,9 @@
+// Todo List
+.todo-list {
+  background-color: #ffffff;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  @include border-radius(10px);
+  overflow: hidden;
+}

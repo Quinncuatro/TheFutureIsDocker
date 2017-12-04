@@ -1,0 +1,18 @@
+// Todo list header
+.todo-header {
+  // Pesudo-selectors
+
+  // Selector styles
+  @include linear-gradient(to top, red, orange);
+  color: #ffffff;
+  text-align: center;
+  padding: $m-space;
+
+  // Nesting
+  h1 {
+    font-family: $rockwell;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,15 @@
+// Todo list Footer
+.todo-footer {
+  // Pseudo-selectors
+
+  // Selector styles
+  padding: addition($m-space, 8px);
+  display: flex;
+
+  // Nesting
+  input[type="text"] {
+    flex-grow: 1;
+    margin-right: $m-space;
+    padding-left: $m-space;
+  }
+}

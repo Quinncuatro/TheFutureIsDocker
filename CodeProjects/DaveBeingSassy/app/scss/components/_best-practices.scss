@@ -1,0 +1,33 @@
+// Style Layout
+.todo-footer {
+  // Pseudo-selectors
+  &:hover {
+    background-color: darken(#ffffff, 5%);
+  }
+
+  // Selector styles
+  padding: 24px;
+
+  // Nesting
+  .btn-primary {
+    color: red;
+  }
+}
+
+//Nesting Best prctices
+.todo-list {
+  // some list styles
+  .todo-body {
+    // some list styles
+    // some list styles
+    // some list styles
+    li {
+      // some list styles
+      // some list styles
+      // some list styles
+      button {
+
+      }
+    }
+  }
+}

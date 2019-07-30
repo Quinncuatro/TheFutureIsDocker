@@ -10,7 +10,7 @@ Copy the sources down and do the build:
 
 ``` bash
 $ cd DockerDemo/
-$ docker build --rm -t quinncuatro/dockerdemo .
+$ docker build --rm -t hquinn/dockerdemo .
 ```
 
 ## Images
@@ -18,7 +18,7 @@ $ docker build --rm -t quinncuatro/dockerdemo .
 View images currently on your system:
 
 ``` bash
-$ docker images
+$ docker images | grep hquinn
 ```
 
 ## Run
@@ -28,7 +28,7 @@ Change directory and run container:
 ``` bash
 $ cd ../CodeProjects/DaveBeingSassy/
 
-$ docker run -d -p 80 --name Project1 --mount type=bind,source="$(pwd)"/app/,target=/var/www/html/ quinncuatro/dockerdemo
+$ docker run -d -p 80 --name Project1 --mount type=bind,source="$(pwd)"/app/,target=/var/www/html/ hquinn/dockerdemo
 ```
 
 ## Browse
@@ -36,12 +36,12 @@ $ docker run -d -p 80 --name Project1 --mount type=bind,source="$(pwd)"/app/,tar
 We need to find the port we want to navigate to:
 
 ``` bash
-$ docker ps -a
+$ docker ps -a | grep Project1
 
 $ curl http://localhost:<port>
 ```
 
-Alternatively, direct your browser to: http://localhost:<port>
+Alternatively, direct your browser to: http://localhost:\<port>
 
 ## Exec
 
@@ -56,9 +56,12 @@ $ docker exec -it Project1 /bin/bash
 Stop a container, delete the container, delete the base image:
 
 ``` bash
+# If you're  still in the container's shell:
+$ exit
+
 $ docker stop Project1
 
 $ docker rm Project1
 
-$ docker rmi quinncuatro/dockerdemo
+$ docker rmi hquinn/dockerdemo
 ```

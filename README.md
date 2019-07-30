@@ -9,6 +9,7 @@ These are the commands that are outlined in the article on how to build, manage,
 Copy the sources down and do the build:
 
 ``` bash
+$ cd DockerDemo/
 $ docker build --rm -t quinncuatro/dockerdemo .
 ```
 

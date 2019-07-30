@@ -25,7 +25,7 @@ $ docker images
 Change directory and run container:
 
 ``` bash
-$ cd ../Path/To/Directory/With/App/
+$ cd ../CodeProjects/DaveBeingSassy/
 
 $ docker run -d -p 80 --name Project1 --mount type=bind,source="$(pwd)"/app/,target=/var/www/html/ quinncuatro/dockerdemo
 ```

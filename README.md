@@ -59,6 +59,7 @@ Stop a container, delete the container, delete the base image:
 # If you're  still in the container's shell:
 $ exit
 
+# Otherwise:
 $ docker stop Project1
 
 $ docker rm Project1

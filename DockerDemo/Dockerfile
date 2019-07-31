@@ -1,6 +1,6 @@
 # Basic setup
 FROM centos:7
-LABEL maintainer="henry+git@learntoprogram.tv"
+LABEL maintainer="henry@tld.com"
 
 # Update repos and install httpd
 RUN yum -y update && \
